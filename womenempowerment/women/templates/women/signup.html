@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap4 %}
+{% csrf_token %}
+
+
+<html>
+
+    <head>
+
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Page Title</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+           <link rel="stylesheet" type="text/css" media="screen" href="{% static "signup.css"%} "/>
+           </head>
+    <body>
+            <div class="container">
+                    <h1>MakeMeEarn</h1>
+                    <hr style="border: 1px solid black">
+                    <div class="row page">
+                        <div class="col-md-7 intro media ">
+                            <div class="mr-3" style="padding:20%">
+                                <img src="{% static 'success.jpg' %}" alt="Success">
+                            </div>
+                            <div class="media-body" style="margin-top:20%">
+                                <p class="mt-0">COME AS USER BE AN ACHIEVER</p>
+                                <div>
+                                    <a href="/women/home"> <button class="btn btn-primary">Back To Home</button></a>
+                                    </div>
+                            </div>
+                            <!-- <div class="row">
+                                    
+                                </div> -->
+                        </div>
+                        
+                        <div class="col-md-5 login form-horizontal">
+                            <div class="col-md-offset-4">
+                                <h3>SignUp</h3>
+                            </div>
+                            <form role="form" action="" method="POST">
+                                    {% csrf_token %}
+                                <div class="form-group input-lg col-md-offset-2 col-md-10 phn_no">
+                                    <input type="text" name="{{form.name.name}}" placeholder="name"><br>
+                                </div>
+                                    <div class="form-group input-lg col-md-offset-2 col-md-10 phn_no">
+                                    <input type="text" name="{{form.phn_no.name}}" placeholder="Mobile Number"><br>
+                                </div>
+                                <div class="form-group input-lg col-md-offset-2 col-md-10 phn_no">
+                                    <input type="text" name="{{form.aadharno.name}}" placeholder="aadhar"><br>
+                                </div>
+                                <div class="form-group input-lg col-md-offset-2 col-md-10 phn_no">
+                                    <input type="text" name="{{form.city.name}}" placeholder="city"><br>
+                                </div>
+                                <div class="form-group input-lg col-md-offset-2 col-md-10 Pswrd">
+                                    <input type="password" name="{{form.password.name}}" placeholder="Password"><br>
+                                </div>
+                                <div>
+                                    <div class="form-group input-lg col-md-offset-2 col-md-10">
+                                        <a href="/women/merchantspopup"> <input type="button" name="user" value="Sign up as Merchant"  class="btn btn-primary">
+                                        <a href="/women/employeepopup"><input type="button" name="user" value="Sign up as Worker" class="btn btn-primary">
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-offset-2 col-md-10 pswrd">
+                                    <a  href="">Forgot Password</a><br>
+                                </div>
+                               
+                                </form>
+                        </div>
+                    
+                    </div>
+                    <hr>
+                    <center>Any Queries:Reach us <a href="">here</a></center>
+                </div>  
+               
+                
+                
+                
+</body>
+</html>

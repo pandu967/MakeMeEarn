@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.heading{
+    color:blue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.objectivematter{
+    color:pink;
+}
+
+.buttons{
+    padding-top: 5px;
+}

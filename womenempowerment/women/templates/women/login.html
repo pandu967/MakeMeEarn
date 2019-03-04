@@ -1,0 +1,84 @@
+<html>
+    <head>
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+            <script src="main.js"></script> -->
+    </head>
+    <style>
+        h3{
+            padding-top:80px;
+        }
+        
+        input[type=text] , input[type=password]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+    }
+    
+
+    .pswrd{
+    font-size:16px;
+    text-align: justify;
+    padding-top: 15px;
+}
+
+    .login{
+        /* border-left:2px solid black; */
+         padding-left:35px; 
+    }
+input:focus {
+
+    outline-color:#3399ff;
+
+}</style>
+    <body>
+            
+            <div class="modal fade" id = "click" role="dialog">
+            <div class="modal-dialog ">
+                <div class = "modal-content ">
+                    <form class="form-horizontal">
+                        <div class="modal-header">
+                            <h3 style="color:#3399ff" class="col-lg-offset-4 col-lg-10">Login</h3>
+                        </div>
+                        <div class="modal-body login">
+                            <div class="form-group col-lg-offset-3 col-lg-10">
+                                <input type="text"  placeholder="Mobile Number">
+                            </div>
+                            <div class="form-group col-lg-offset-2 col-lg-10 ">
+                                    <input type="password"  placeholder="Password">
+                            </div>
+                            <div>
+                                <div class="radio form-group input-lg col-lg-offset-2 col-lg-10">
+                                    <label class="radio-inline"><input type="radio" name="user" value="merchant">Merchant</label>
+                                    <label class="radio-inline"><input type="radio" name="user" value="worker">Worker</label>
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-offset-2 col-lg-10 pswrd">
+                                <a  href="" class="pswrd1">Forgot Password</a><br>
+                            </div>
+                            <div class="form-group col-lg-offset-2 col-lg-10">
+                                    <input class= "btn btn-primary" type="button" name="Login" value="Login"><br>
+                                </div>
+                        </div>
+                       
+                         
+                    </form>
+                </div>
+            </div>
+            </div>
+    </body>
+</html>
